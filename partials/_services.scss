@@ -1,0 +1,173 @@
+.background {
+	background-image: url(assets/bg.png);
+	height: 260px;
+}
+
+.services-gallery-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services-info {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-top: 13%;
+}
+
+.services-image {
+	width: 50%;
+	img {
+	max-width: 100%;
+	display: block;
+	}
+}
+
+.content button {
+@include button($primaryColor);
+	a {
+		@include buttonAnchor($primaryColor);
+	}
+}
+
+.content {
+	padding: 3%;
+	width: 50%;
+	display: flex;
+}
+
+.content h3 {
+	font-size: 14px;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h3:after {
+	content: "";
+	display: flex;
+	width: 50px;
+	height: 1px;
+	background-color: $primaryColor;
+	margin: 2%;
+}
+
+.content p {
+	line-height: 1.5rem;
+	margin-bottom: 5%;
+}
+
+.number {
+	font-size: 73px;
+	color: #d8d8d8;
+	margin-bottom: 0px;
+	margin-top: 10%;
+}
+
+.services-flex-opposite {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+@media (max-width: 1046px) {
+	.content button {
+		margin-left: 50%;
+	}
+	.content h3 {
+		font-size: 14px;
+		margin-bottom: -2%;
+	}
+	.number {
+		font-size: 60px;
+	}
+	.content {
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 1012px) {
+	.content p {
+		margin-bottom: 3%;
+	}
+}
+
+@media (max-width: 940px) {
+	.content p {
+		margin-bottom: 3%;
+		line-height: 1.4rem;
+	}
+	.content button {
+		margin-left: 55%;
+	}
+	.content h3 {
+		font-size: 14px;
+		margin-bottom: -3%;
+	}
+	.number {
+		font-size: 55px;
+	}
+	.content {
+		padding-top: 0;
+	}
+	.background {
+		height: 200px;
+	}	
+}
+
+@media (max-width: 911px) {
+	.services-image {
+		width: 60%;
+	}
+	.content {
+		width: 60%;
+	}
+	.services-gallery-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 3%;
+	}
+	.services-flex-opposite {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.background {
+		height: 160px;
+	}
+}
+
+@media (max-width: 768px) {
+	.background {
+		height: 140px;
+	}
+}
+
+@media (max-width: 740px) {
+	.services-image {
+		width: 75%;
+	}
+	.content {
+		width: 75%;
+	}
+}
+
+@media (max-width: 480px) {
+	.number {
+		font-size: 50px;
+	}
+	
+	.services-info p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 420px) {
+	.secondary-nav ul li {
+		margin: 5px;
+	}
+}

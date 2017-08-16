@@ -1,0 +1,81 @@
+.come-work {
+	background-image: url(../../assets/cat_bg.jpg);
+	height: 595px;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(3, 3, 3, 0.4);
+	position: relative;
+}
+
+.new-overlay {
+	position: absolute;
+	background-color: rgba(3, 3, 3, 0.4);
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.work-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: red;
+	flex-direction: column;
+	padding: 3%;
+}
+
+.section-header.two {
+	width: 100%;
+	margin-top: 0px;
+}
+
+.section-header.two h2 {
+	@include sectionh2 ($tertiaryColor);
+	letter-spacing: 0.8rem;
+	text-transform: uppercase;
+}
+
+.section-header.two h1 {
+	@include sectionh1 ($tertiaryColor);
+	text-transform: uppercase;
+}
+
+.section-header.two:after {
+	@include sectionAfter ($tertiaryColor);
+}
+
+.work-info p {
+	color: $tertiaryColor;
+	margin-top: 0;
+}
+
+button {
+	@include button($tertiaryColor);
+	a {
+		@include buttonAnchor($tertiaryColor);
+	}
+}
+
+@media (max-width: 501px) {
+	.section-header.two h2 {
+		letter-spacing: 0;
+	}
+
+	.section-header.two h1 {
+		font-size: 20px;
+	}
+
+	.work-info p {
+		font-size: 13px;
+	}
+}

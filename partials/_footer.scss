@@ -1,0 +1,102 @@
+.contact-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5%;
+}
+
+.contact-options {
+	text-align: center;
+	margin: 15px;
+	width: calc(33.3% - 30px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 13px;
+	color: #a2a35;
+	text-transform: uppercase;
+	margin-bottom: 5%;
+}
+
+.copyright span {
+	color: $tertiaryColor;
+}
+
+footer {
+	background-color: black;
+}
+
+.address {
+	color: $tertiaryColor;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: $primaryFont;
+}
+
+.contact-options p {
+	font-family: $secondaryFont;
+	font-size: 14px;
+}
+
+.social-media {
+	display: flex;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	a {
+		color: white;
+	}
+}
+
+.facebook {
+	background-color: #3d599b;
+	width: 25%;
+	padding: 2%;
+	transition: 0.3s all ease;
+		&:hover {
+			border: 5px solid $secondaryColor;
+		}
+}
+
+.twitter {
+	background-color: #5cadff;
+	width: 25%;
+	padding: 2%;
+	transition: 0.3s all ease;
+		&:hover {
+			border: 5px solid $secondaryColor;
+		}
+}
+
+.google {
+	background-color: #fd4142;
+	width: 25%;
+	padding: 2%;
+	transition: 0.3s all ease;
+		&:hover {
+			border: 5px solid $secondaryColor;
+		}
+
+}
+
+.pinterest {
+	background-color: #de393a;
+	width: 25%;
+	padding: 2%; 
+	transition: 0.3s all ease;
+		&:hover {
+			border: 5px solid $secondaryColor;
+		}
+}
+
+@media (max-width: 660px) {
+	.social-media {
+		margin-bottom: 50px;
+	}
+}

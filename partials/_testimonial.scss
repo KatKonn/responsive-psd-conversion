@@ -1,0 +1,40 @@
+.testimonial {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 3%;
+}
+
+blockquote {
+	text-align: center;
+	font-family: $secondaryFont;
+	font-size: 16px;
+}
+
+.quote {
+	color: $secondaryColor;
+	font-family: $primaryFont;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.testimonial {
+	h5 {
+		font-family: $primaryFont;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		letter-spacing: 2px;
+	}
+	h6 {
+		color: $primaryColor;
+		text-transform: uppercase;
+		font-size: 13px;
+		margin-top: 0px;
+		font-family: $secondaryFont;
+		letter-spacing: 0.2rem;
+	}
+}

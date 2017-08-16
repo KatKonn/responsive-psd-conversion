@@ -1,0 +1,166 @@
+.projects-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 5%;
+}
+
+.projects-images {
+	margin: 10px;
+	width: calc(33.3% - 20px);
+	text-align: center;
+	position: relative;
+}
+
+.projects-images img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	flex-direction: column;
+	opacity: 0;
+	transition: all 0.6s linear;
+	line-height: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.overlay {
+	h4 {
+		font-size: 14px;
+		font-family: $primaryFont;
+		color: $tertiaryColor;
+		text-transform: uppercase;
+		letter-spacing: 0.3rem;
+	}
+	p {
+		size: 13px;
+		color: $tertiaryColor;
+		text-transform: uppercase;
+	}
+}
+ 
+.projects-images:hover .overlay {
+	opacity: 1;
+	transition: all 0.6s linear;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.plus {
+	color: $tertiaryColor;
+	font-size: 16px;
+	padding: 2%;
+}
+
+.secondary-nav ul {
+	@include navigation ($primaryColor);
+	justify-content: center;
+	color: $primaryColor;
+	padding: 0px;
+	li {
+		margin: 10px;
+	}	
+	a {
+		@include navigationAnchor ($primaryColor);
+		color: $primaryColor;
+	}
+	a:hover {
+		border-bottom: 2px solid $secondaryColor;
+		color: $secondaryColor;
+	}
+}
+
+@media (max-width: 940px) {
+	.overlay.two {
+		position: absolute;
+		top: 78%;
+		opacity: 1;
+		display: block;
+	}
+
+	.projects-images.overlay {
+		display: flex;
+	}
+
+	.overlay p {
+		display: none;
+	
+	}
+
+	.overlay h4 {
+		font-size: 12px;
+		letter-spacing: 0.1rem;
+	}
+}
+
+@media (max-width: 850px) {
+	.overlay.two {
+		top: 65%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.projects-images {
+		width: calc(50% - 20px);
+		margin: 10px;	
+	}
+
+	.overlay.two {
+		position: absolute;
+		top: 70%;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.8);
+
+	}
+}
+
+@media (max-width: 550px) {
+	.overlay.two {
+		position: absolute;
+		top: 60%;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+@media (max-width: 480px) {
+	.projects-images {
+		width: calc(80% - 20px)
+	}
+	.overlay.two {
+		top: 65%;
+	}
+}
+
+@media (max-width: 420px) {
+	.secondary-nav {
+		display: none;
+	}
+}

@@ -1,0 +1,28 @@
+.partners-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	align-items: center;
+	img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1110px) {
+	.partners-image {
+		width: 50%;
+		text-align: center;
+	} 
+	.partners-gallery {
+		width: 55%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 660px) {
+	.partners-gallery {
+		width: 75%;
+	}
+}

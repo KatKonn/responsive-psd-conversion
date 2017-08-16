@@ -1,0 +1,68 @@
+.mission {
+	display: flex;
+}
+
+.mission-goals {
+	padding: 30px;
+	border-bottom: 1px solid $primaryColor;
+	border-right: 1px solid $primaryColor;
+	line-height: 1.5rem;
+		h2 {
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 0.3rem;
+	}
+}
+
+.mission-goals:last-child {
+	border-right: none;
+}
+
+@media (max-width: 940px) {
+	.mission {
+		flex-wrap: wrap;
+	}
+	.mission-goals {
+		padding: 15px;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}	
+	.mission-goals:nth-child(2) {
+		border-right: none;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.mission {
+		flex-wrap: wrap;
+	}
+	.mission-goals {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+
+	.mission-goals h2 {
+		letter-spacing: 0;
+
+}
+	.mission-goals p {
+		margin-top: 0;
+	}
+
+
+}
+
+@media (max-width: 580px) {
+
+	.mission-goals  {
+		width: 100%;
+		border-right: none;
+	}
+}

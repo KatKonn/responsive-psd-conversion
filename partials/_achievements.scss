@@ -1,0 +1,41 @@
+.achievements {
+	background-color: $secondaryColor;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.achievement-list {
+	padding: 20px;
+	text-align: center;
+}
+
+.info-banner {
+	background-color: $secondaryColor;
+}
+
+.achievement-list p {
+	color: $tertiaryColor;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+p.our-numbers {
+	font-size: 25px;
+}
+
+@media (max-width: 768px) {
+	.achievements {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.achievement-list {
+		width: 50%;
+		padding: 20px;
+	}
+
+	p.our-numbers {
+		margin: 0;
+	}
+}

@@ -1,0 +1,77 @@
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Source Sans Pro', sans-serif;
+
+$primaryColor: #999999;
+$secondaryColor: #000000;
+$tertiaryColor: #ffffff;
+
+@mixin button($buttonColor) {
+	color: $buttonColor;
+	border-style: solid;
+	border-color: $buttonColor;
+	background: none;
+	text-align: center;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 0.3s all ease;
+	&:hover {
+		border-color: #ffc726;
+	}
+} 
+
+@mixin buttonAnchor($buttonColor) {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $buttonColor;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin navigation ($navColor) {
+	display: flex;
+	list-style: none;
+	color: ($navColor);
+	font-size: 12px;
+	text-transform:: uppercase;
+}
+
+@mixin navigationAnchor ($navColor) {
+	text-decoration: none;
+	font-size: 12px;
+	color: ($navColor);
+}
+
+@mixin sectionHeader {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 0px;
+	padding: 30px;
+	
+}
+
+@mixin sectionAfter ($color){
+	content: "";
+	display: flex;
+	justify-content: center;
+	width: 10%;
+	height: 2px;
+	background-color: ($color);
+	margin: 10px 0px 10px 0px;
+}
+
+@mixin sectionh1 ($color) {
+	font-size: 25px;
+	color: $color;
+	text-transform: uppercase;
+}
+
+@mixin sectionh2 ($color) {
+	font-size: 13px;
+	color: $color;
+	text-transform: uppercase;
+}
