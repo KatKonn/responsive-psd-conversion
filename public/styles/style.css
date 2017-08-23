@@ -553,7 +553,14 @@ h3:after {
   .number {
     font-size: 50px; }
   .services-info p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .content button a {
+    font-size: 10px; }
+  .content button {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100px;
+    height: 30px; } }
 
 @media (max-width: 420px) {
   .secondary-nav ul li {
@@ -868,21 +875,15 @@ p.our-numbers {
     font-size: 12px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid white; }
   .main-nav a {
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid white; }
   .main-nav a:hover {
-    font-size: 12px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid white; } }
+    border-bottom: 1px solid #ffffff; } }
 
 @media (max-width: 370px) {
   .logo {

@@ -164,6 +164,17 @@ h3:after {
 	.services-info p {
 		font-size: 14px;
 	}
+
+	.content button a {
+		font-size: 10px;
+	}
+
+	.content button {
+		padding-left: 0;
+   		padding-right: 0;
+    	width: 100px;
+    	height: 30px;
+	}
 }
 
 @media (max-width: 420px) {
